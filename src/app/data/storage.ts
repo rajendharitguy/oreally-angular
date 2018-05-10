@@ -27,4 +27,8 @@ public cover_photo: string;
     this.Instructions = ins;
     this.cover_photo = cpt;
  }
+
+  public static createBlank() {
+      return new Items('', '', 2, 1, null, null, null);
+  }
 }

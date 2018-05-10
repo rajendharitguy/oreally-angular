@@ -2,7 +2,30 @@
   <div class="display-4">dishes..</div>
   <div class="d-flex">
     <div class="row justify-content-center">
-      <app-dish-summary [recepe]="recepe" class="card bg-light mt-2 col-xs-12 col-sm-4" *ngFor="let recepe of recepes"></app-dish-summary>
+      <app-dish-summary [recepe]="recepe" class="card bg-light mt-2 col-xs-12 col-sm-4" style="padding: 0 3px;" *ngFor="let recepe of recepes"></app-dish-summary>
     </div>
+  </div>
+  <div class="jumbotron mt-3">
+    <h4>Add Recepe</h4>
+    <form class="col-md-6">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" [(ngModel)]="recepe_in_progress.title" name="title" placeholder="type what you want" aria-describedby="titleHelp">
+      </div>
+      <div class="form-group">
+        <label for="description">description</label>
+        <textarea type="text-area" class="form-control" [(ngModel)]="recepe_in_progress.description" rows="5" name="description" placeholder="Describe what you want" aria-describedby="descriptionHelp">
+          </textarea>
+      </div>
+      <div class="form-group">
+        <label for="count">Serve How Many</label>
+        <input type="text" class="form-control" [(ngModel)]="recepe_in_progress.feeds_this_many" name="serve" placeholder="how many you are" aria-describedby="serviceHelp">
+      </div>
+      <div class="form-group">
+        <label for="count">Time</label>
+        <input type="text" class="form-control" [(ngModel)]="recepe_in_progress.preparation_time" name="time" placeholder="how much time you can wait" aria-describedby="serviceHelp">
+      </div>
+      <button class="bnt btn-info" value="Add recepe" (click) = "addRecepe()">Add</button>
+    </form>
   </div>
 </div>

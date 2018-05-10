@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { DishesComponent } from './component/dishes/dishes.component';
 import { DishSummaryComponent } from './component/dish-summary/dish-summary.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,8 @@ import { DishSummaryComponent } from './component/dish-summary/dish-summary.comp
     DishSummaryComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
