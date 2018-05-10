@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Items } from './data/storage';
+
 
 @Component({
   selector: 'app-initial',
@@ -7,9 +7,5 @@ import { Items } from './data/storage';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-recepe: Items;
 
-constructor() {
-  this.recepe = new Items('samosa', 'very spicy, you can choose how much spicy you want', null, null, null);
- }
 }
