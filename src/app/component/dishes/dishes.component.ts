@@ -12,9 +12,9 @@ recepes: Items[];
 
 constructor() {
   this.recepes = [
-    new Items('samosa', 'very spicy, you can choose how much spicy you want', null, null, null),
-    new Items('parota', 'very tasty, and you can choose type', null , null, null),
-    new Items('bajji', 'very spicy, you can choose how much spicy you want', null, null, null)
+    new Items('samosa', 'very spicy you can choose how much spicy you want', 3, 40, null, null, null),
+    new Items('parota', 'very tasty, and you can choose type', 2, 34, null , null, null),
+    new Items('bajji', 'very spicy, you can choose how much spicy you want', 5, 30,  null, null, null)
   ];
  }
 }
