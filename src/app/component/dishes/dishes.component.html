@@ -1,7 +1,7 @@
 <div class="container">
-    <button class="btn-sm btn-info" (click)="changeClass()">change clr</button>
-    
-      <h1 class="display-4" [class.addclass]='colorChange'>dishes..</h1>
+    <input type="button" class="btn-sm btn-info" value="change clr" (click)="changeClass()">
+    <input type="button" class="btn-sm btn-info" value="change font" (click)="changefont()">
+      <h1 class="display-4" [ngClass]='colorChange' [ngStyle]='font_size'>dishes..</h1>
     
     
     <div class="row">
