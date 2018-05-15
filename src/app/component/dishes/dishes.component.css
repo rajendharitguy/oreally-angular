@@ -1,3 +1,8 @@
 .jumbotron{
     margin-left:0 !important;
 }
+
+.addclass{
+color:red;
+background: gray;
+}

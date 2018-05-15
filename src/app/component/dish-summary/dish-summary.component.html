@@ -1,12 +1,13 @@
 
       
-        <img class="card-image-top img-fluid " style="width:500px;" src="{{ recepe.cover_photo ? recepe.cover_photo : '/assets/images/samosa.jpg' }}">
+        <img class="card-image-top img-thumbnail " style="width:500px;" src="{{ recepe.cover_photo ? recepe.cover_photo : '/assets/images/samosa.jpg' }}">
         <div class="card-body">
           <h5 class="card-title text-danger">{{ recepe.title }}</h5>
           <p class="card-text text-info">{{ recepe.description }}</p>
            <hr>
           <p>how many: <span class="float-right clearfix">{{ recepe.feeds_this_many }}</span></p>
-          <p style="padding-bottom: 0;">preparation time: <span class="float-right clearfix">{{ recepe.feeds_this_many }}</span></p>
+          <p style="padding-bottom: 0;">preparation time: <span class="float-right clearfix">{{ recepe.preparation_time }}</span></p>
+          <p class="badge badge-info pb-1" style="cursor: pointer;" (click)="zoomRecepe()">Zoom</p>
         </div>
     
    

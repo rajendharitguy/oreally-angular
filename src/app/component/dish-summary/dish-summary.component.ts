@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Items } from '../../data/storage';
 @Component({
   selector: 'app-dish-summary',
@@ -9,6 +9,12 @@ export class DishSummaryComponent {
   @Input()
   recepe: Items;
 
+  @Output()
+ zoomIn: EventEmitter<Items> = new EventEmitter();
+
   constructor() { }
 
+  public zoomRecepe() {
+    this.zoomIn.emit(this.recepe);
+  }
 }
